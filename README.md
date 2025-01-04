@@ -73,28 +73,31 @@ deej is written in Go and [distributed](https://github.com/omriharel/deej/releas
 
 ## Slider mapping (configuration)
 
-deej uses a simple YAML-formatted configuration file named [`config.yaml`](./config.yaml), placed alongside the deej executable.
+deej使用一个较为简单的配置文件[`config.yaml`](./config.yaml)储存参数，请将其与deej可执行文件放在一起。
 
 The config file determines which applications (and devices) are mapped to which sliders, and which parameters to use for the connection to the Arduino board, as well as other user preferences.
 
-**This file auto-reloads when its contents are changed, so you can change application mappings on-the-fly without restarting deej.**
+**文件更改时deej会自动重新载入，因此你完全不需要在编辑前关闭deej的可执行文件。**
 
-It looks like this:
+就像这样：
 
 ```yaml
 slider_mapping:
   0: master
   1: chrome.exe
-  2: spotify.exe
+  2: cloudmusic.exe
   3:
-    - pathofexile_x64.exe
-    - rocketleague.exe
-  4: discord.exe
+    - java.exe
+    - javaw.exe
+    - PotPlayerMini64.exe
+    
+  4: msedge.exe
 
 # set this to true if you want the controls inverted (i.e. top is 0%, bottom is 100%)
 invert_sliders: false
 
-# settings for connecting to the arduino board
+# 请根据自己的Arduino设备自己调整
+# 查看Arduino端口需要打开设备管理器，找到端口（COM与LPT），展开后记下设备的波导率和端口号
 com_port: COM4
 baud_rate: 9600
 
@@ -209,4 +212,4 @@ Please see [`docs/CONTRIBUTING.md`](./docs/CONTRIBUTING.md).
 
 ## License
 
-deej is released under the [MIT license](./LICENSE).
+deej使用[MIT授权](./LICENSE)。
