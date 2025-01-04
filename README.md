@@ -89,8 +89,7 @@ slider_mapping:
   3:
     - java.exe
     - javaw.exe
-    - PotPlayerMini64.exe
-    
+    - PotPlayerMini64.exe  
   4: msedge.exe
 
 # set this to true if you want the controls inverted (i.e. top is 0%, bottom is 100%)
@@ -106,7 +105,7 @@ baud_rate: 9600
 noise_reduction: default
 ```
 
-- `master` is a special option to control the master volume of the system _(uses the default playback device)_
+- `master`用于控制默认输出设备的音量
 - `mic` is a special option to control your microphone's input level _(uses the default recording device)_
 - `deej.unmapped` is a special option to control all apps that aren't bound to any slider ("everything else")
 - On Windows, `deej.current` is a special option to control whichever app is currently in focus
