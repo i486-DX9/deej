@@ -21,7 +21,7 @@ deej consists of a [lightweight desktop client](#features) written in Go, and an
 - [Features](#features)
 - [How it works](#how-it-works)
   - [Hardware](#hardware)
-    - [Schematic](#schematic)
+    - [设备原理(#设备原理)
   - [Software](#software)
 - [Slider mapping (configuration)](#slider-mapping-configuration)
 - [Build your own!](#build-your-own)
@@ -35,11 +35,11 @@ deej consists of a [lightweight desktop client](#features) written in Go, and an
   - [Download and installation](#download-and-installation)
   - [Building from source](#building-from-source)
 - [Community](#community)
-- [License](#license)
+- [授权](#授权)
 
 ## Features
 
-deej is written in Go and [distributed](https://github.com/omriharel/deej/releases/latest) as a portable (no installer needed) executable.
+deej is written in Go and [distributed](https://github.com/omrihare/deej/releases/latest) as a portable (no installer needed) executable.
 
 - Bind apps to different sliders
   - Bind multiple apps per slider (i.e. one slider for all your games)
@@ -60,9 +60,9 @@ deej is written in Go and [distributed](https://github.com/omriharel/deej/releas
 ### Hardware
 
 - The sliders are connected to 5 (or as many as you like) analog pins on an Arduino Nano/Uno board. They're powered from the board's 5V output (see schematic)
-- The board connects via a USB cable to the PC
+- 用USB数据线将Arduino连接到电脑
 
-#### Schematic
+#### 设备原理
 
 ![Hardware schematic](assets/schematic.png)
 
@@ -181,7 +181,7 @@ With many different 3D-printed designs being added to our [community showcase](.
 
 - Head over to the [releases page](https://github.com/omriharel/deej/releases) and download the [latest version](https://github.com/omriharel/deej/releases/latest)'s executable and configuration file (`deej.exe` and `config.yaml`)
 - Place them in the same directory anywhere on your machine
-- (Optional, on Windows) Create a shortcut to `deej.exe` and copy it to `%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup` to have deej run on boot
+- (仅限Windows，可选项) 给`deej.exe`创建一个快捷方式并移动快捷方式到`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`以在启动时启动deej可执行程序
 
 ### Building from source
 
@@ -209,6 +209,6 @@ If you love deej and want to show your support for this project, you can do so u
 
 Please see [`docs/CONTRIBUTING.md`](./docs/CONTRIBUTING.md).
 
-## License
+## 授权
 
 deej使用[MIT授权](./LICENSE)。
